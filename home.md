@@ -1,7 +1,19 @@
 <!-- TITLE: Home -->
 <!-- SUBTITLE: A quick summary of Home -->
 
-# Teste
-> just a simple test
+## Introdução:
+Bem vindo a eguru wiki, faça sua contribuição, compartilhando as documentações importantes para os processos e desenvolvimentos.
 
-[video](https://vimeo.com/223293575){.vimeo}
+### Tópicos
+
+* [Game API Templates](game-api-templates/home)
+
+* [SCORM](scorm/home)
+
+* [Games BackEnd](backEnd/home)
+
+* [Documentação de processos variados.](other_stuff/home)
+
+* [Requisitos.](requisitos/home)
+
+* [Regras de uso](leiame)
