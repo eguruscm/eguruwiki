@@ -1,3 +1,4 @@
+<!-- TITLE: Regras de uso -->
 \[[Voltar](home)]
 
 # eguru - Wiki
