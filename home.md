@@ -12,7 +12,7 @@ Bem vindo a eguru wiki, faça sua contribuição, compartilhando as documentaç�
 
 * [Games BackEnd](back-end/home)
 
-* [Documentação de processos variados.](other_stuff/home)
+* [Documentação de processos variados.](other-stuff/home)
 
 * [Requisitos.](requisitos/home)
 
