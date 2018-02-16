@@ -1,6 +1,3 @@
-<!-- TITLE: Leiame -->
-<!-- SUBTITLE: A quick summary of Leiame -->
-
 \[[Voltar](home)]
 
 # eguru - Wiki
