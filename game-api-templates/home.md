@@ -1,5 +1,4 @@
 <!-- TITLE: Documentação de Templates de Game API -->
-<!-- SUBTITLE: A quick summary of Home -->
 
 \[[Voltar](../home)]
 
