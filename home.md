@@ -1,7 +1,5 @@
-<!-- TITLE: Home -->
-<!-- SUBTITLE: A quick summary of Home -->
+<!-- TITLE: Introdução -->
 
-## Introdução:
 Bem vindo a eguru wiki, faça sua contribuição, compartilhando as documentações importantes para os processos e desenvolvimentos.
 
 ### Tópicos
