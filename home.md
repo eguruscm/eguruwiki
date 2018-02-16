@@ -10,7 +10,7 @@ Bem vindo a eguru wiki, faça sua contribuição, compartilhando as documentaç�
 
 * [SCORM](scorm/home)
 
-* [Games BackEnd](backEnd/home)
+* [Games BackEnd](back-end/home)
 
 * [Documentação de processos variados.](other_stuff/home)
 
