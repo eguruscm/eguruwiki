@@ -26,12 +26,12 @@
 ## Checagens da importação
   Com o backup feito, é necessário realizar algumas checagens antes de subir os novos usuários para a tabela final.
 	
-	> Importar o .csv na tabela insertUsers
-	>
-	> ![Telhanorte 03](/uploads/telhanorte-360/telhanorte-03.png "Telhanorte 03")
+> Importar o .csv na tabela insertUsers
+>
+> ![Telhanorte 03](/uploads/telhanorte-360/telhanorte-03.png "Telhanorte 03")
 
-	> Configurações da importação
-	> 
-	> ![Telhanorte 04](/uploads/telhanorte-360/telhanorte-04.png "Telhanorte 04")
+> Configurações da importação
+> 
+> ![Telhanorte 04](/uploads/telhanorte-360/telhanorte-04.png "Telhanorte 04")
 
 
