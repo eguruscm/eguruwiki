@@ -15,5 +15,10 @@
 ## Backup do banco
   Após editar o template com os novos usuários, faça um backup do banco por precaução. Siga os passos indicados abaixo:
 	
-* Exportar banco como sql
+> Exportar banco como sql
 > ![Telhanorte 01](/uploads/telhanorte-360/telhanorte-01.png "Telhanorte 01")
+
+> Configurações para exportação
+> ![Telhanorte 02](/uploads/telhanorte-360/telhanorte-02.png "Telhanorte 02")
+
+
