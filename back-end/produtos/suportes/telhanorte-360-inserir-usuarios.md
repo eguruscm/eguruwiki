@@ -70,13 +70,16 @@
 > select insertUsers.* from insertUsers, registrations where insertUsers.cpf = registrations.cpf;
 > ```
 > 
+
+
+## Inserção de usuários
+
+> inserir usuarios novos na tabela
 > ```sql
 > INSERT INTO `registrations`(`registration`, `name`, `cpf`, `branch`) 
 > (select matricula, nome, cpf, branch from insertUsers)
 > ```
-
-## Teste
-
+> 
 > Checagem final(deve retornar 0)
 >
 > ```sql
