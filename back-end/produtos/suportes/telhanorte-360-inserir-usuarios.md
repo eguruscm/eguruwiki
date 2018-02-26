@@ -40,9 +40,9 @@
 
 > realizar as seguintes consultas
 > 
-> 
-```sql
+> ```sql
 update insertUsers set branch = NULL;
 ```
+
 
 
