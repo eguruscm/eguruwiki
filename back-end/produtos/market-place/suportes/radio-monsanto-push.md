@@ -3,22 +3,22 @@
 
 # Rádio Monsanto Push
 
-* Acessar o Google Firebase na conta da E-guru (Pegar as credênciais com Infra)
+1.Acessar o Google Firebase na conta da E-guru (Pegar as credênciais com Infra)
 
-* Acessar o projeto Eguru-lms-app
+2.Acessar o projeto Eguru-lms-app
 
-* Na barra de seleção esquerda navegar até Grow > Notifications > Nova Mensagem
+3.Na barra de seleção esquerda navegar até Grow > Notifications > Nova Mensagem
 
-* 
+3.1
  ![Img 26022018 144908 0](/uploads/img-26022018-144908-0.png "Img 26022018 144908 0")
  
- *  Conteúdo da notificação em "Texto da Mensagem" 
+4.Conteúdo da notificação em "Texto da Mensagem" 
 
-* Apertar "Opções Avançadas", "Segmento do usuário"
+5.Apertar "Opções Avançadas", "Segmento do usuário"
 
-* Adicionar Aplicativo iOS e Android  além dos idiomas no campo "Segmentar usuário se..."
+6.Adicionar Aplicativo iOS e Android  além dos idiomas no campo "Segmentar usuário se..."
 
-   * 
+   6.1 
     ![Img 26022018 144719 0](/uploads/img-26022018-144719-0.png "Img 26022018 144719 0")
 		
- * Clicar "Enviar" e checar nos respectivos dispositivos se teve êxito.
+7.Clicar "Enviar" e checar nos respectivos dispositivos se teve êxito.
