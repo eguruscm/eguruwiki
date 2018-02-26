@@ -38,11 +38,20 @@
 > 
 > ![Telhanorte 05](/uploads/telhanorte-360/telhanorte-05.png "Telhanorte 05")
 
-> realizar as seguintes consultas
+> realizar os seguintes updates
 > 
 > ```sql
 > update insertUsers set branch = NULL;
 > ```
-
-
+> 
+> ```sql
+> update insertUsers set branch = (select branches.id from branches where branches.name = insertUsers.loja);
+> ```
+> 
+> e depois realizar as consultas
+> 
+> ```sql
+> Select * from insertUsers where branch is null;
+> ```
+> 
 
