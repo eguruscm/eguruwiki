@@ -70,6 +70,7 @@
 > select insertUsers.* from insertUsers, registrations where insertUsers.cpf = registrations.cpf;
 > ```
 > 
+> -----
 
 
 ## Inserção de usuários
