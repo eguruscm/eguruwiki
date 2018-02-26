@@ -1,7 +1,7 @@
 <!-- TITLE: Mongo Cmd -->
 <!-- SUBTITLE: A quick summary of Mongo Cmd -->
 
-    \[[Voltar](../index.html)]
+\[[Voltar](../index.html)]
 
 # Lista de Comandos #
 
