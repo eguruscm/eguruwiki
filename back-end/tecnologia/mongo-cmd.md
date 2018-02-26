@@ -10,8 +10,8 @@
 
 
 #### Backup / executar via linha de comando ####
-```
 
+```c_cpp
 //O -u e -p não são obrigatórios, só se existir um usuário configurado
 
 mongodump --host ecpreprodapp1.cloudapp.net -d NOME_DO_BANCO[eguru-dev] --port PORTA[27017] 
@@ -19,33 +19,45 @@ mongodump --host ecpreprodapp1.cloudapp.net -d NOME_DO_BANCO[eguru-dev] --port P
 
 //ex.:
 mongodump --host ecpreprodapp1.cloudapp.net -d eguru-dev --port 27017 -o C:/backups
+
 ```
+
 
 
 #### Restore de backup / executar via linha de comando ####
-```
+
+```c_cpp
+
 
 mongorestore (--collection NOME_DA_COLECAO[people](não obrigatório, não usar se for restaurar banco completo))
     --db NOME_DO_BANCO[eguru-dev] CAMINHO(C:/backups/eguru-dev)
 
 //ex.:
 mongorestore --db eguru-dev C:/backups/eguru-dev
+
 ```
+
 
 
 #### Update em coleção interna ####
 
 * Um nível de array interna:
-```
+
+```c_cpp
+
 
 db.Processos.updateMany({'Atividades.NomeDoGame':'loja-de-herois'},
                         { $set: {'Atividades.$.UrlDaAtividade': 'teste.com.br'}},
                         {upsert:false})
 
+
 ```
 
+
 * Mais do que um nível de arrays internas:
-```
+
+```c_cpp
+
 
 db.Candidatos.find({},{IdUsuario:0}).forEach(function(candidato){     
             
@@ -58,11 +70,15 @@ db.Candidatos.find({},{IdUsuario:0}).forEach(function(candidato){
     db.Candidatos.update({_id: candidato._id}, candidato, {upsert:false});     
 
 });
+
 ```
+
 
 
 #### Valor de coleção interna como lista ####
-```
+
+```c_cpp
+
 
 var teste = db.getCollection('UsuariosGames').aggregate([
                      { $match: {'Rodadas.Tempo' : {$gte:6000}, 'Rodadas.Status': 2 } },
@@ -72,17 +88,22 @@ teste.forEach(function(el){
     result.push(el.IdDoUsuario)
     });
 result;
+
 ```
+
 
 
 #### Helpers para lidar com UUID ####
 
 Copiar o conteúdo do link abaixo, e colar no arquivo .mongorc.js que normalmente se encontra em C:/Usuarios/{NomeDousuario}/.mongorc.js . Em seguida, com o Robomongo aberto clicar em "Options" e selecionar a opção "load .mongorc.js". Agora nos novos shells abertos será possivel realizar buscas por NUUID conforme exemplo:
 
-```
+
+```c_cpp
 
  db.getCollection('Candidatos').find({_id: NUUID("5d94e9b2-c5a6-4326-b22b-2f723d0dae08")}) 
+
 ```
+
 
 
 Versão com NUUID:
@@ -93,7 +114,9 @@ Fonte:
 
 
 #### Atualizar múltiplos itens com array ####
-```
+
+```c_cpp
+
 
 db.getCollection('Candidatos').update(
         {'Atividades.ClientIdDeAcessoAGameApi': NUUID("ff120b90-dc52-458c-b415-0de366846e78")},
@@ -101,14 +124,19 @@ db.getCollection('Candidatos').update(
         {upsert: true, multi: true }
    )
 
+
 ```
+
 
 
 #### Filtro com não igual ####
-```
+
+```c_cpp
+
 
 db.getCollection('Candidatos').find(
        {'Atividades.ClientIdDeAcessoAGameApi': {$ne:NUUID("29d850a5-40cb-40c6-aa1c-a97af495c154")}}
 )
+
 
 ```
