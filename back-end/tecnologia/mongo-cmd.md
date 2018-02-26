@@ -10,8 +10,7 @@
 
 
 #### Backup / executar via linha de comando ####
-```
-#!javascript
+```#!javascript
 
 //O -u e -p não são obrigatórios, só se existir um usuário configurado
 
