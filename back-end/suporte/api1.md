@@ -1,7 +1,7 @@
 <!-- TITLE: Api 1 -->
 <!-- SUBTITLE: A quick summary of Api 1 -->
 
-\[[Voltar](../index.html)]
+\[[Voltar](../home)]
 
 # Games BackEnd - Suporte - API 1.0
 
