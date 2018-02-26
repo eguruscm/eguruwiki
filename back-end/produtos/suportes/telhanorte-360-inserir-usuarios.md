@@ -50,8 +50,35 @@
 > 
 > e depois realizar as consultas
 > 
+> Verificar se os usuários tem branch ID(o retorno deve ser 0)
+> 
 > ```sql
 > Select * from insertUsers where branch is null;
 > ```
 > 
+> Verificar se existem matriculas repetidas(o retorno deve ser 0)
+> 
+> ```sql
+> SELECT matricula, COUNT(*) c FROM insertUsers GROUP BY matricula HAVING c > 1;
+> ```
+> 
+> Checar se o usuário ja existe(o retorno deve ser 0)
+> 
+> ```sql
+> select insertUsers.* from insertUsers, registrations where insertUsers.matricula = registrations.registration;
+> 
+> select insertUsers.* from insertUsers, registrations where insertUsers.cpf = registrations.cpf;
+> ```
+> 
+> ```sql
+> INSERT INTO `registrations`(`registration`, `name`, `cpf`, `branch`) 
+> (select matricula, nome, cpf, branch from insertUsers)
+> ```
+>
+> Checagem final(deve retornar 0)
+>
+> ```sql
+> select registrations.* from insertUsers, registrations where insertUsers.matricula = registrations.registration; 
+> ```
+
 
