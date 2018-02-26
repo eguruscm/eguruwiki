@@ -10,7 +10,7 @@
 
 
 #### Backup / executar via linha de comando ####
-```#!javascript
+```
 
 //O -u e -p não são obrigatórios, só se existir um usuário configurado
 
@@ -24,7 +24,6 @@ mongodump --host ecpreprodapp1.cloudapp.net -d eguru-dev --port 27017 -o C:/back
 
 #### Restore de backup / executar via linha de comando ####
 ```
-#!javascript
 
 mongorestore (--collection NOME_DA_COLECAO[people](não obrigatório, não usar se for restaurar banco completo))
     --db NOME_DO_BANCO[eguru-dev] CAMINHO(C:/backups/eguru-dev)
@@ -38,7 +37,6 @@ mongorestore --db eguru-dev C:/backups/eguru-dev
 
 * Um nível de array interna:
 ```
-#!javascript
 
 db.Processos.updateMany({'Atividades.NomeDoGame':'loja-de-herois'},
                         { $set: {'Atividades.$.UrlDaAtividade': 'teste.com.br'}},
@@ -48,7 +46,6 @@ db.Processos.updateMany({'Atividades.NomeDoGame':'loja-de-herois'},
 
 * Mais do que um nível de arrays internas:
 ```
-#!javascript
 
 db.Candidatos.find({},{IdUsuario:0}).forEach(function(candidato){     
             
@@ -66,7 +63,6 @@ db.Candidatos.find({},{IdUsuario:0}).forEach(function(candidato){
 
 #### Valor de coleção interna como lista ####
 ```
-#!javascript
 
 var teste = db.getCollection('UsuariosGames').aggregate([
                      { $match: {'Rodadas.Tempo' : {$gte:6000}, 'Rodadas.Status': 2 } },
@@ -84,7 +80,6 @@ result;
 Copiar o conteúdo do link abaixo, e colar no arquivo .mongorc.js que normalmente se encontra em C:/Usuarios/{NomeDousuario}/.mongorc.js . Em seguida, com o Robomongo aberto clicar em "Options" e selecionar a opção "load .mongorc.js". Agora nos novos shells abertos será possivel realizar buscas por NUUID conforme exemplo:
 
 ```
-#!javascript
 
  db.getCollection('Candidatos').find({_id: NUUID("5d94e9b2-c5a6-4326-b22b-2f723d0dae08")}) 
 ```
@@ -99,7 +94,6 @@ Fonte:
 
 #### Atualizar múltiplos itens com array ####
 ```
-#!javascript
 
 db.getCollection('Candidatos').update(
         {'Atividades.ClientIdDeAcessoAGameApi': NUUID("ff120b90-dc52-458c-b415-0de366846e78")},
@@ -112,7 +106,6 @@ db.getCollection('Candidatos').update(
 
 #### Filtro com não igual ####
 ```
-#!javascript
 
 db.getCollection('Candidatos').find(
        {'Atividades.ClientIdDeAcessoAGameApi': {$ne:NUUID("29d850a5-40cb-40c6-aa1c-a97af495c154")}}
