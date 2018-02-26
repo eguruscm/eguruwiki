@@ -34,4 +34,15 @@
 > 
 > ![Telhanorte 04](/uploads/telhanorte-360/telhanorte-04.png "Telhanorte 04")
 
+> acessar a aba consultas
+> 
+> ![Telhanorte 05](/uploads/telhanorte-360/telhanorte-05.png "Telhanorte 05")
+
+> realizar as seguintes consultas
+> 
+> 
+```sql
+update insertUsers set branch = NULL;
+```
+
 
