@@ -103,6 +103,7 @@ db.getCollection('Candidatos').update(
    )
 
 ```
+
 #### Filtro com não igual ####
 ```
 #!javascript
