@@ -21,5 +21,5 @@
 
 ### Commands Sheet
 
-* [Commands](mongoCmd)
+* [Commands](mongo-cmd)
     
