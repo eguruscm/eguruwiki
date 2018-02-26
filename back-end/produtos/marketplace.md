@@ -10,7 +10,7 @@
 
 baixe e instale os projetos abaixo
 
-1. [RabbitMQ](../tecnologia/rabbitMQ)
+1. [RabbitMQ](../tecnologia/rabbit)
 
 2. [mongoDB](../tecnologia/mongo)
 
