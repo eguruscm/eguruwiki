@@ -9,3 +9,11 @@
 	* Nomes em caixa alta e sem acentos ou ç
 	* CPFs com 11 digitos(formatar campos)
 	* branch deve estar preenchido como *null*
+
+-----
+
+## Backup do banco
+  Após editar o template com os novos usuários, faça um backup do banco por precaução. Siga os passos indicados abaixo:
+	
+	* Exportar banco como sql
+		![Telhanorte 01](/uploads/telhanorte-360/telhanorte-01.png "Telhanorte 01")
