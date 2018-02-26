@@ -8,4 +8,4 @@
 	os campos devem ser preenchidos da seguinte forma:
 	* Nomes em caixa alta e sem acentos ou ç
 	* CPFs com 11 digitos(formatar campos)
-	* branch deve estar preenchido como ** *null* **
+	* branch deve estar preenchido como *null*
