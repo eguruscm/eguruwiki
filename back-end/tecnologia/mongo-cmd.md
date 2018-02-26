@@ -8,6 +8,7 @@
 #### Casos reais ####
 [https://bitbucket.org/eguru/game-api-2.0/wiki/Casos%20Reais%20(Exemplos)](https://bitbucket.org/eguru/game-api-2.0/wiki/Casos%20Reais%20(Exemplos))
 
+
 #### Backup / executar via linha de comando ####
 ```
 #!javascript
@@ -21,6 +22,7 @@ mongodump --host ecpreprodapp1.cloudapp.net -d NOME_DO_BANCO[eguru-dev] --port P
 mongodump --host ecpreprodapp1.cloudapp.net -d eguru-dev --port 27017 -o C:/backups
 ```
 
+
 #### Restore de backup / executar via linha de comando ####
 ```
 #!javascript
@@ -31,6 +33,7 @@ mongorestore (--collection NOME_DA_COLECAO[people](não obrigatório, não usar 
 //ex.:
 mongorestore --db eguru-dev C:/backups/eguru-dev
 ```
+
 
 #### Update em coleção interna ####
 
@@ -61,6 +64,7 @@ db.Candidatos.find({},{IdUsuario:0}).forEach(function(candidato){
 });
 ```
 
+
 #### Valor de coleção interna como lista ####
 ```
 #!javascript
@@ -74,6 +78,7 @@ teste.forEach(function(el){
     });
 result;
 ```
+
 
 #### Helpers para lidar com UUID ####
 
@@ -92,6 +97,7 @@ Versão com NUUID:
 Fonte:
 [https://github.com/mongodb/mongo-csharp-driver/blob/master/uuidhelpers.js](https://github.com/mongodb/mongo-csharp-driver/blob/master/uuidhelpers.js)
 
+
 #### Atualizar múltiplos itens com array ####
 ```
 #!javascript
@@ -103,6 +109,7 @@ db.getCollection('Candidatos').update(
    )
 
 ```
+
 
 #### Filtro com não igual ####
 ```
