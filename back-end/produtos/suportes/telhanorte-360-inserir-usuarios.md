@@ -11,6 +11,7 @@
 	* CPFs com 11 digitos(formatar campos)
 	* branch deve estar preenchido como *null*
 
+
 -----
 
 ## Backup do banco
@@ -23,6 +24,7 @@
 > Configurações para exportação
 > 
 > ![Telhanorte 02](/uploads/telhanorte-360/telhanorte-02.png "Telhanorte 02")
+
 
 -----
 
@@ -74,6 +76,7 @@
 > ```
 > 
 > -----
+
 
 -----
 
