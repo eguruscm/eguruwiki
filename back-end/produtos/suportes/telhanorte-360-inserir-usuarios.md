@@ -24,6 +24,8 @@
 > 
 > ![Telhanorte 02](/uploads/telhanorte-360/telhanorte-02.png "Telhanorte 02")
 
+-----
+
 ## Checagens da importação
   Com o backup feito, é necessário realizar algumas checagens antes de subir os novos usuários para a tabela final.
 	
@@ -73,6 +75,7 @@
 > 
 > -----
 
+-----
 
 ## Inserção de usuários
 
