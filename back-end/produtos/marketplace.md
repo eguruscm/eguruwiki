@@ -12,5 +12,5 @@ baixe e instale os projetos abaixo
 
 1. [RabbitMQ](../tecnologia/rabbitMQ)
 
-2. [mongoDB](../tecnologia/mongo.html)
+2. [mongoDB](../tecnologia/mongo)
 
