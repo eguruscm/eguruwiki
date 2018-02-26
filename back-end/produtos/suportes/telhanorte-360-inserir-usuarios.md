@@ -41,8 +41,8 @@
 > realizar as seguintes consultas
 > 
 > ```sql
-update insertUsers set branch = NULL;
-```
+> update insertUsers set branch = NULL;
+> ```
 
 
 
