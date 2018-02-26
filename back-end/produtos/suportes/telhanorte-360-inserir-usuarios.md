@@ -81,6 +81,10 @@
 > select registrations.* from insertUsers, registrations where insertUsers.matricula = registrations.registration; 
 > ```
 >
->    
+> -----
+
+
+
+
 
 
